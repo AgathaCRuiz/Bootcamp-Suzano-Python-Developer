@@ -1,3 +1,5 @@
+# Otimizando o Sistema Bancário com Funções Python
+
 import textwrap
 
 def menu():
@@ -85,7 +87,7 @@ def criar_conta(agencia, numero_conta, usuarios):
 
 def listar_contas(contas):
     for conta in contas:
-        linha = f"""\ 
+        linha = f"""\
             Agência:\t{conta['agencia']}
             C/C:\t\t{conta['numero_conta']}
             Titular:\t{conta['usuario']['Nome']}
@@ -144,3 +146,6 @@ def main():
 
         else:
             print("Operação inválida, por favor selecione novamente a operação desejada.")
+
+if __name__ == "__main__":
+    main()
